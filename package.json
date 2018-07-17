@@ -1,0 +1,14 @@
+{
+  "name": "barnabe",
+  "version": "1.0.0",
+  "description": "bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "ping"
+  },
+  "author": "zor",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
