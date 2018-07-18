@@ -4,7 +4,7 @@ const client = new Discord.Client();
 var prefix = ("*");
 
 client.on('ready', () => {
-	client.user.setGame("Command: *help");
+	client.user.setGame("Qu'est ce que je vous sers?");
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
@@ -22,7 +22,7 @@ client.on('message', msg => {
 	if (randnum == 2) {
 	msg.reply('Voilà le plus beau!');}
 	if (randnum == 3) {
-	msg.reply('Faites place, laissez la venir à mon bar!');}
+	msg.reply('Faites place, laissez venir à mon bar!');}
 	if (randnum == 4) {
 	msg.reply('VIITE, un autre tonneau!');}
   }
@@ -33,6 +33,15 @@ client.on('message', msg => {
     msg.reply('Je suis là!');
   }
 });
+
+client.on('messageReactionAdd', (reaction, user) => {
+	if (reaction.emoji.name === ":joy:") {
+	return channel.send ("HAHA, c'était marrant ça " + member.displayName + "!");}		
+	if (reaction.emoji.name === ":sweat_smile:") {
+	return channel.send ("Hoho, l'engoisse...");}	
+	if (reaction.emoji.name === ":heart_eyes:") {
+	return channel.send ("Que d'amour!");}
+}
 
 function random(min, max){
 	min = Math.ceil(0);
