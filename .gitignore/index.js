@@ -9,6 +9,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+  message.content.toLowerCase;
+	
   if (msg.content === prefix + 'help') {
     msg.channel.sendMessage('Liste des commandes: \n -*help');
   }
@@ -33,7 +35,7 @@ client.on('message', msg => {
     msg.reply('Je suis là!');
   }
   if (msg.content.startsWith (":joy:")) {
-	msg.channel.send ("HAHA, c'était marrant ça " + member.displayName + "!");}		
+	msg.channel.send ("HAHA, c'était marrant ça " + message.author.username + "!");}		
   if (msg.content.startsWith (":sweat_smile:")) {
 	msg.channel.send ("Hoho, l'engoisse...");}	
   if (msg.content.startsWith (":heart_eyes:")) {
