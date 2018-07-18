@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-var prefix = ("*");
+var prefix = (":");
 
 client.on('ready', () => {
 	client.user.setGame("Qu'est ce que je vous sers?");
@@ -32,11 +32,11 @@ client.on('message', msg => {
   if (msg.content === 'Barnabe' || msg.content === 'barnabe') {
     msg.reply('Je suis là!');
   }
-  if (msg.content === ":joy:") {
+  if (msg.content === prefix + 'joy' + prefix) {
 	msg.send ('test');}		
-  if (msg.content === ":sweat_smile:") {
+  if (msg.content === prefix + 'sweat_smile' + prefix) {
 	msg.send ("Hoho, l'engoisse...");}	
-  if (msg.content === ":heart_eyes:") {
+  if (msg.content === prefix + 'heart_eyes' + prefix) {
 	msg.send ("Berk c'est dégueu!");}
 });
 
