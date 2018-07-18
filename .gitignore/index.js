@@ -27,18 +27,20 @@ client.on('message', msg => {
 	if (randnum == 4) {
 		msg.reply('VIITE, un autre tonneau!');}
   }
-  if (msg.content === 'irashai') {
+  if (msg.content === "irashai") {
     msg.reply('Oula keskidit lui Oo');
   }
   if (msg.content === 'Barnabe' || msg.content === 'barnabe') {
     msg.reply('Je suis là!');
   }
   if (msg.content.startsWith (":joy:")) {
-	msg.channel.send ("HAHA, c'était marrant ça!");}		
-  if (msg.content.startsWith (":sweat_smile:")) {
+	msg.reply === "HAHA, c'était marrant ça!";}		
+  if (msg.content (":sweat_smile:")) {
 	msg.channel.send ("Hoho, l'engoisse...");}	
-  if (msg.content.startsWith (":heart_eyes:")) {
-	msg.channel.send ("Berk c'est dégueu!");}
+  if (msg.content === ":heart_eyes:") {
+	msg.reply ("Berk c'est dégueu!");}
+  if (msg.content.startsWith === ":heart_eyes:") {
+	msg.reply ("Berk c'est dégueu!");}
 });
 
 function random(min, max){
