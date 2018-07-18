@@ -33,12 +33,6 @@ client.on('message', msg => {
   if (msg.content === 'Barnabe' || msg.content === 'barnabe') {
     msg.reply('Je suis là!');
   }
-  if (msg.content.startsWith (":joy:")) {
-	msg.reply === "HAHA, c'était marrant ça!";}		
-  if (msg.content (":sweat_smile:")) {
-	msg.channel.send ("Hoho, l'engoisse...");}	
-  if (msg.content === ":heart_eyes:") {
-	msg.reply ("Berk c'est dégueu!");}
 });
 
 function random(min, max){
