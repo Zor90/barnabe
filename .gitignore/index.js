@@ -15,7 +15,7 @@ client.on('message', msg => {
   if (msg.content === 'ping' || msg.content === 'Ping' || msg.content === 'PING' ) {
     msg.reply('Pong!');
   }
-  if (msg.content === 'bonjour' || msg.content === 'Bonjour' || msg.content === 'Pwet' || msg.content === 'salut' || msg.content === 'Salut' || msg.content === 'hello') {
+  if (msg.content === 'bonjour' || msg.content === 'Bonjour' || msg.content === 'Pwet' || msg.content === 'salut' || msg.content === 'Salut' || msg.content === 'hello' || msg.content === 'Coucou' || msg.content === 'coucou' || msg.content === 'Nyu') {
     random();
 	if (randnum == 1) {
 	msg.reply('Je vous sers une chopine?');}
