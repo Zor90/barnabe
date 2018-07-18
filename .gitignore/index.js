@@ -39,8 +39,6 @@ client.on('message', msg => {
 	msg.channel.send ("Hoho, l'engoisse...");}	
   if (msg.content === ":heart_eyes:") {
 	msg.reply ("Berk c'est dégueu!");}
-  if (msg.content.startsWith === ":o") {
-	msg.reply ("Berk c'est dégueu!");}
 });
 
 function random(min, max){
