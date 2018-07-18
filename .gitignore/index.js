@@ -33,7 +33,7 @@ client.on('message', msg => {
   if (msg.content.startsWith ('Barnabe') || msg.content.startsWith ('barnabe')) {
     msg.reply('Je suis là!');
   }
-  if (msg.content.startsWith (prefix + 'joy')) {
+  if (msg.content.startsWith (prefix + 'joy' + prefix)) {
 	msg.reply("HAHA, c'était marrant ça!");}		
   if (msg.content.startsWith (prefix + 'sweat_smile')) {
 	msg.reply("Hoho, l'engoisse...");}	
