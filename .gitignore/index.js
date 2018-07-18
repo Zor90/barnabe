@@ -34,13 +34,13 @@ client.on('message', msg => {
   }
 });
 
-client.on('messageReactionAdd', (reaction, user, msg) => {
+client.on('messageReactionAdd', (reaction, user) => {
 	if (reaction.emoji.name === ":joy:") {
-	msg.reply("HAHA, c'était marrant ça " + member.displayName + "!");}		
+		client.channels.send ("HAHA, c'était marrant ça " + member.displayName + "!");}		
 	if (reaction.emoji.name === ":sweat_smile:") {
-	msg.reply("Hoho, l'engoisse...");}	
+		client.channels.send ("Hoho, l'engoisse...");}	
 	if (reaction.emoji.name === ":heart_eyes:") {
-	msg.reply("Que d'amour!");}
+		client.channels.send ("Berk c'est dégueu!");}
 }
 
 function random(min, max){
