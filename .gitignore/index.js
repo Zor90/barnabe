@@ -30,9 +30,15 @@ client.on('message', msg => {
   if (msg.content === "irashai") {
     msg.reply('Oula keskidit lui Oo');
   }
-  if (msg.content.startsWith ('Barnabe') || msg.content === 'barnabe') {
+  if (msg.content.startsWith ('Barnabe') || msg.content.startsWith ('barnabe')) {
     msg.reply('Je suis là!');
   }
+  if (msg.content.startsWith (":joy:")) {
+	msg.reply "HAHA, c'était marrant ça!";}		
+  if (msg.content.startsWith (":sweat_smile:")) {
+	msg.reply ("Hoho, l'engoisse...");}	
+  if (msg.content.startsWith (":heart_eyes:")) {
+	msg.reply ("Berk c'est dégueu!");}
 });
 
 function random(min, max){
