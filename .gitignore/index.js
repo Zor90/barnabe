@@ -30,8 +30,16 @@ client.on('message', msg => {
   if (msg.content === "irashai") {
     msg.reply('Oula keskidit lui Oo');
   }
-  if (msg.content.startsWith ('Barnabe') || msg.content.startsWith ('barnabe')) {
-    msg.reply('Je suis là!');
+  if (msg.content.startsWith ('Barnabe') || msg.content.startsWith ('Barnabé') || msg.content.startsWith ('barnabe') || msg.content.startsWith ('barnabé')) {
+    random();
+	if (randnum == 1) {
+		msg.reply('Je suis là!');}
+	if (randnum == 2) {
+		msg.reply("Qu'est-ce que vous voulez?");}
+	if (randnum == 3) {
+		msg.reply("On m'appelle?");}
+	if (randnum == 4) {
+		msg.reply("Votre chope est encore vide?");}
   }
   if (msg.content.startsWith (prefix + 'joy:')) {
 	msg.reply("HAHA, c'était marrant ça!");}		
