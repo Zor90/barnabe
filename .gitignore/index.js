@@ -18,13 +18,13 @@ client.on('message', msg => {
   if (msg.content === 'bonjour' || msg.content === 'Bonjour' || msg.content === 'Pwet' || msg.content === 'salut' || msg.content === 'Salut' || msg.content === 'hello' || msg.content === 'Coucou' || msg.content === 'coucou' || msg.content === 'Nyu') {
     random();
 	if (randnum == 1) {
-	msg.reply('Je vous sers une chopine?');}
+		msg.reply('Je vous sers une chopine?');}
 	if (randnum == 2) {
-	msg.reply('Voilà le plus beau!');}
+		msg.reply('Voilà le plus beau!');}
 	if (randnum == 3) {
-	msg.reply('Faites place, laissez venir à mon bar!');}
+		msg.reply('Faites place, laissez venir à mon bar!');}
 	if (randnum == 4) {
-	msg.reply('VIITE, un autre tonneau!');}
+		msg.reply('VIITE, un autre tonneau!');}
   }
   if (msg.content === 'irashai') {
     msg.reply('Oula keskidit lui Oo');
@@ -32,16 +32,13 @@ client.on('message', msg => {
   if (msg.content === 'Barnabe' || msg.content === 'barnabe') {
     msg.reply('Je suis là!');
   }
+  if (msg.content === ":joy:") {
+	msg.send ("HAHA, c'était marrant ça " + member.displayName + "!");}		
+  if (msg.content === ":sweat_smile:") {
+	msg.send ("Hoho, l'engoisse...");}	
+  if (msg.content === ":heart_eyes:") {
+	msg.send ("Berk c'est dégueu!");}
 });
-
-client.on('messageReactionAdd', (reaction, user) => {
-	if (reaction.emoji.name === ":joy:") {
-		client.channels.send ("HAHA, c'était marrant ça " + member.displayName + "!");}		
-	if (reaction.emoji.name === ":sweat_smile:") {
-		client.channels.send ("Hoho, l'engoisse...");}	
-	if (reaction.emoji.name === ":heart_eyes:") {
-		client.channels.send ("Berk c'est dégueu!");}
-}
 
 function random(min, max){
 	min = Math.ceil(0);
