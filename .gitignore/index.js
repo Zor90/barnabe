@@ -33,11 +33,11 @@ client.on('message', msg => {
   if (msg.content.startsWith ('Barnabe') || msg.content.startsWith ('barnabe')) {
     msg.reply('Je suis là!');
   }
-  if (msg.content.startsWith (prefix + 'joy' + prefix)) {
+  if (msg.content.startsWith (prefix + 'joy:')) {
 	msg.reply("HAHA, c'était marrant ça!");}		
-  if (msg.content.startsWith (prefix + 'sweat_smile')) {
+  if (msg.content.startsWith (prefix + 'sweat_smile:')) {
 	msg.reply("Hoho, l'engoisse...");}	
-  if (msg.content.startsWith (prefix + 'heart_eyes')) {
+  if (msg.content.startsWith (prefix + 'heart_eyes:')) {
 	msg.reply("Berk c'est dégueu!");}
 });
 
