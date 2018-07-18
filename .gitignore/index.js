@@ -16,7 +16,15 @@ client.on('message', msg => {
     msg.reply('Pong!');
   }
   if (msg.content === 'bonjour' || msg.content === 'Bonjour' || msg.content === 'Pwet' || msg.content === 'salut' || msg.content === 'Salut' || msg.content === 'hello') {
-    msg.reply('Je vous sers une chopine?');
+    random();
+	if (random == 1) {
+	msg.reply('Je vous sers une chopine?');}
+	if (random == 2) {
+	msg.reply('Voilà le plus beau!');}
+	if (random == 3) {
+	msg.reply('Faites place, laissez la venir à mon bar!');}
+	if (random == 4) {
+	msg.reply('VIITE, un autre tonneau!');}
   }
   if (msg.content === 'irashai') {
     msg.reply('Oula keskidit lui Oo');
@@ -25,5 +33,11 @@ client.on('message', msg => {
     msg.reply('Je suis là!');
   }
 });
+
+function random(min, max){
+	min = Math.ceil(0);
+	max = Math.floor(4);
+	randum = Math.floor(Math.random() * (max - min +1) + min);
+}
 
 client.login('NDY4NjgzMDEwODM3OTcwOTY0.Di82eQ.eayZ7Y6xBgYzCINqXICqkaoDFXM');
