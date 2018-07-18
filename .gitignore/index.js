@@ -30,7 +30,7 @@ client.on('message', msg => {
   if (msg.content === "irashai") {
     msg.reply('Oula keskidit lui Oo');
   }
-  if (msg.content === 'Barnabe' || msg.content === 'barnabe') {
+  if (msg.content.startsWith ('Barnabe') || msg.content === 'barnabe') {
     msg.reply('Je suis là!');
   }
 });
