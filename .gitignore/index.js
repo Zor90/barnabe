@@ -33,7 +33,7 @@ client.on('message', msg => {
     msg.reply('Je suis là!');
   }
   if (msg.content === ":joy:") {
-	msg.send ("HAHA, c'était marrant ça " + member.displayName + "!");}		
+	msg.send ('test');}		
   if (msg.content === ":sweat_smile:") {
 	msg.send ("Hoho, l'engoisse...");}	
   if (msg.content === ":heart_eyes:") {
