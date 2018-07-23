@@ -27,7 +27,7 @@ client.on('message', msg => {
 	if (randnum == 4) {
 		msg.reply('VIITE, un autre tonneau!');}
   }
-  if (msg.content.With ("irashai")) {
+  if (msg.content.startsWith ("irashai")) {
     msg.reply('Oula keskidit lui Oo');
   }
   if (msg.content.startsWith ('Barnabe') || msg.content.startsWith ('Barnabé') || msg.content.startsWith ('barnabe') || msg.content.startsWith ('barnabé')) {
