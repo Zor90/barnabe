@@ -1,7 +1,9 @@
-var secret = require('./secret');
+const aws = require('aws-sdk');
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+let token = new aws.token({
+	token: process.env.token});
 var prefix = (':');
 
 client.on('ready', () => {
@@ -56,4 +58,4 @@ function random(min, max){
 	randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
 
-client.login('secret.token');
+client.login('token');
