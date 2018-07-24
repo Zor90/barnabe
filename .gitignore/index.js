@@ -1,9 +1,7 @@
-const aws = require('aws-sdk');
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-let token = new aws.token({
-	token: process.env.token});
+var token =  process.env.token;
 var prefix = (':');
 
 client.on('ready', () => {
