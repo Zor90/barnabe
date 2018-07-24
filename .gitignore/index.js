@@ -1,7 +1,11 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-var token =  process.env.TOKEN;
+let token1 =  process.env.TOKEN_1;
+let token2 =  process.env.TOKEN_2;
+let token3 =  process.env.TOKEN_3;
+
+var token = token1"."token2"."token3;
 var prefix = (':');
 
 client.on('ready', () => {
@@ -11,7 +15,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 	
-  if (msg.content === prefix + 'help') {
+  if (msg.content === (prefix + 'help')) {
     msg.channel.sendMessage('Liste des commandes: \n -*help');
   }
   if (msg.content.startsWith  ('ping') || msg.content.startsWith  ('Ping') || msg.content.startsWith  ('PING') ) {
