@@ -1,3 +1,4 @@
+var secret = require('./secret');
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
@@ -55,4 +56,4 @@ function random(min, max){
 	randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
 
-client.login('NDY4NjgzMDEwODM3OTcwOTY0.Di82eQ.eayZ7Y6xBgYzCINqXICqkaoDFXM');
+client.login('secret.token');
